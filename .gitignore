@@ -1,0 +1,13 @@
+# Node / Build tools
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
