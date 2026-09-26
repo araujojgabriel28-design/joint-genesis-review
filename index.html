@@ -39,6 +39,7 @@
     html, body {
       overflow-x: hidden;
       scroll-behavior: smooth;
+      width: 100%;
     }
 
     body {
@@ -53,7 +54,7 @@
 
     /* Fluid Typography */
     h1, .display-5 {
-      font-size: clamp(1.75rem, 3.8vw + 0.5rem, 2.75rem);
+      font-size: clamp(1.5rem, 5vw + 0.2rem, 2.75rem);
       line-height: 1.25;
       font-weight: 800;
       color: var(--primary);
@@ -61,7 +62,7 @@
     }
 
     h2 {
-      font-size: clamp(1.4rem, 2.6vw + 0.4rem, 2.1rem);
+      font-size: clamp(1.25rem, 3.5vw + 0.2rem, 2.1rem);
       font-weight: 700;
       color: var(--primary);
       margin-bottom: 1.25rem;
@@ -70,13 +71,13 @@
     }
 
     h3, .h5 {
-      font-size: clamp(1.15rem, 1.6vw + 0.3rem, 1.35rem);
+      font-size: clamp(1.05rem, 2vw + 0.2rem, 1.35rem);
       font-weight: 700;
       line-height: 1.35;
     }
 
     p.lead {
-      font-size: clamp(1.05rem, 1.3vw + 0.4rem, 1.25rem);
+      font-size: clamp(0.98rem, 1.5vw + 0.3rem, 1.25rem);
       line-height: 1.55;
       color: var(--text-muted);
     }
@@ -94,26 +95,26 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 1.5rem;
+      padding: 0 1.25rem;
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     }
 
     .sticky-header .brand {
       font-weight: 800;
-      font-size: clamp(1.05rem, 2vw + 0.2rem, 1.25rem);
+      font-size: clamp(0.95rem, 2.5vw, 1.25rem);
       color: var(--primary);
       white-space: nowrap;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.35rem;
     }
 
     .sticky-header .brand span {
       color: var(--teal);
       font-weight: 600;
-      font-size: 0.85em;
+      font-size: 0.82em;
       background: var(--teal-light);
-      padding: 0.15rem 0.5rem;
+      padding: 0.15rem 0.45rem;
       border-radius: 0.4rem;
     }
 
@@ -122,7 +123,7 @@
       color: var(--primary);
       border: none;
       font-weight: 700;
-      padding: 0.55rem 1.4rem;
+      padding: 0.55rem 1.35rem;
       border-radius: 2rem;
       transition: all 0.2s ease-in-out;
       text-decoration: none;
@@ -143,13 +144,13 @@
 
     .btn-accent.btn-lg {
       padding: 0.85rem 2rem;
-      font-size: clamp(1.05rem, 1.4vw + 0.3rem, 1.2rem);
+      font-size: clamp(1rem, 1.5vw + 0.2rem, 1.2rem);
       min-height: 52px;
     }
 
     /* Sections */
     section {
-      padding: clamp(2.5rem, 5vw, 4.25rem) 0;
+      padding: clamp(2.25rem, 5vw, 4.25rem) 0;
       scroll-margin-top: var(--header-height);
     }
 
@@ -194,12 +195,14 @@
       align-items: center;
       background: #f1f5f9;
       color: #475569;
-      font-size: 0.8rem;
+      font-size: clamp(0.75rem, 2vw, 0.82rem);
       font-weight: 600;
       padding: 0.35rem 0.75rem;
       border-radius: 2rem;
       margin-bottom: 0.75rem;
       border: 1px solid #e2e8f0;
+      max-width: 100%;
+      line-height: 1.3;
     }
 
     .badges-container {
@@ -210,7 +213,7 @@
     }
 
     .badge-img {
-      width: clamp(70px, 12vw, 95px);
+      width: clamp(65px, 14vw, 92px);
       height: auto;
       object-fit: contain;
     }
@@ -252,13 +255,13 @@
       border: 1px solid #fef3c7;
       border-left: 5px solid #f59e0b;
       border-radius: var(--radius);
-      padding: clamp(1.25rem, 3vw, 1.75rem);
+      padding: clamp(1.15rem, 3vw, 1.75rem);
     }
 
     /* Testimonials */
     .testimonial-avatar {
-      width: 58px;
-      height: 58px;
+      width: 54px;
+      height: 54px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
@@ -269,7 +272,7 @@
     .package-card {
       border: 2px solid var(--border);
       border-radius: var(--radius);
-      padding: clamp(1.35rem, 3vw, 1.85rem);
+      padding: clamp(1.25rem, 3vw, 1.85rem);
       text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       height: 100%;
@@ -298,18 +301,19 @@
       transform: translateX(-50%);
       background: var(--teal);
       color: white;
-      padding: 0.35rem 1.35rem;
+      padding: 0.35rem 1.15rem;
       border-radius: 1rem;
-      font-size: 0.78rem;
+      font-size: clamp(0.7rem, 2.5vw, 0.78rem);
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.4px;
       white-space: nowrap;
       box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+      max-width: 90%;
     }
 
     .package-card .product-img {
-      max-width: 180px;
-      margin: 1rem auto;
+      max-width: 170px;
+      margin: 0.75rem auto;
     }
 
     /* Scientific reference citation */
@@ -319,13 +323,22 @@
       border-left: 3px solid var(--teal);
       padding-left: 0.75rem;
       margin-top: 0.75rem;
+      line-height: 1.45;
+    }
+
+    /* Timeline Items */
+    .timeline-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
     }
 
     /* Accordion */
     .accordion-button {
-      padding: 1.15rem 1.25rem;
+      padding: 1rem 1.15rem;
       font-weight: 600;
-      font-size: clamp(1rem, 1.5vw + 0.2rem, 1.1rem);
+      font-size: clamp(0.95rem, 1.5vw + 0.2rem, 1.08rem);
+      line-height: 1.4;
     }
 
     .accordion-button:not(.collapsed) {
@@ -342,7 +355,7 @@
     footer {
       background: var(--primary);
       color: white;
-      padding: clamp(2.5rem, 4vw, 3.5rem) 0 calc(2rem + env(safe-area-inset-bottom));
+      padding: clamp(2.25rem, 4vw, 3.5rem) 0 calc(2rem + env(safe-area-inset-bottom));
     }
 
     footer a {
@@ -422,17 +435,25 @@
 
     @media (max-width: 575.98px) {
       :root {
-        --header-height: 58px;
+        --header-height: 56px;
+      }
+
+      body {
+        font-size: 1rem;
       }
 
       .sticky-header {
-        padding: 0 0.85rem;
+        padding: 0 0.75rem;
+      }
+
+      .sticky-header .brand span {
+        display: none;
       }
 
       .sticky-header .btn-accent {
-        padding: 0.4rem 0.85rem;
-        font-size: 0.85rem;
-        min-height: 36px;
+        padding: 0.35rem 0.8rem;
+        font-size: 0.82rem;
+        min-height: 34px;
       }
 
       .badges-container {
@@ -440,12 +461,32 @@
       }
 
       .scorecard-item {
-        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        padding: 0.75rem 0;
+      }
+
+      .scorecard-item .badge {
+        align-self: flex-start;
+      }
+
+      .timeline-item {
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .timeline-item .badge {
+        margin-bottom: 0.25rem;
       }
 
       .btn-responsive-block {
         width: 100% !important;
         display: block !important;
+      }
+
+      .package-card .product-img {
+        max-width: 140px;
       }
     }
   </style>
@@ -457,7 +498,7 @@
       <i class="fa-solid fa-shield-halved text-success"></i>
       Joint Genesis™ <span>Independent Review</span>
     </div>
-    <a href="https://2be72gpejwdydoc9shpfm7-tbs.hop.clickbank.net" target="_self" class="btn btn-accent"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Check Official Discount</a>
+    <a href="https://2be72gpejwdydoc9shpfm7-tbs.hop.clickbank.net" target="_self" class="btn btn-accent"><i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Official Discount</a>
   </header>
 
   <!-- 2. Headline Review -->
@@ -510,26 +551,26 @@
           <p>Joint Genesis™ works progressively by replenishing joint lubrication rather than masking symptoms with artificial numbing agents. Here is the realistic timeline documented over a 90-day test window:</p>
           
           <div class="clean-card p-3 p-md-4 my-3">
-            <div class="d-flex align-items-start mb-3">
-              <span class="badge bg-secondary me-3 mt-1 px-2 py-1">Days 1–30</span>
+            <div class="timeline-item mb-3">
+              <span class="badge bg-secondary px-2 py-1 flex-shrink-0">Days 1–30</span>
               <div>
-                <strong>Initial Absorption & Adaptation:</strong>
+                <strong class="d-block mb-1">Initial Absorption & Adaptation:</strong>
                 <p class="text-muted mb-0">Subtle changes in morning mobility. Nutrients like Mobilee® and French Maritime Pine Bark begin supporting synovial fluid quality, though dramatic instant changes should not be expected in the first weeks.</p>
               </div>
             </div>
             <hr class="my-2 text-muted">
-            <div class="d-flex align-items-start my-3">
-              <span class="badge bg-info text-dark me-3 mt-1 px-2 py-1">Days 31–60</span>
+            <div class="timeline-item my-3">
+              <span class="badge bg-info text-dark px-2 py-1 flex-shrink-0">Days 31–60</span>
               <div>
-                <strong>Reduced Friction & Morning Ease:</strong>
+                <strong class="d-block mb-1">Reduced Friction & Morning Ease:</strong>
                 <p class="text-muted mb-0">Noticeable reduction in joint creaking and morning stiffness. Getting up from chairs, navigating stairs, and bending to pick up objects becomes noticeably smoother.</p>
               </div>
             </div>
             <hr class="my-2 text-muted">
-            <div class="d-flex align-items-start mt-3">
-              <span class="badge bg-success me-3 mt-1 px-2 py-1">Days 61–90</span>
+            <div class="timeline-item mt-3">
+              <span class="badge bg-success px-2 py-1 flex-shrink-0">Days 61–90</span>
               <div>
-                <strong>Sustained Mobility & Active Living:</strong>
+                <strong class="d-block mb-1">Sustained Mobility & Active Living:</strong>
                 <p class="text-muted mb-0">Substantial improvements in stamina for physical hobbies like gardening, walking dogs, and playing with family without paying for it with excessive next-day soreness.</p>
               </div>
             </div>
@@ -662,7 +703,7 @@
     <div class="container">
       <h2 class="text-center">How to Use Joint Genesis™</h2>
       <div class="row g-3 justify-content-center mt-2">
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6 col-12">
           <div class="clean-card p-3 text-center h-100">
             <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mx-auto mb-2" style="width: 52px; height: 52px;">
               <i class="fa-solid fa-capsules text-teal fs-4"></i>
@@ -671,7 +712,7 @@
             <p class="text-muted small mb-0">Swallow one vegetarian capsule every morning with water or breakfast.</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6 col-12">
           <div class="clean-card p-3 text-center h-100">
             <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mx-auto mb-2" style="width: 52px; height: 52px;">
               <i class="fa-solid fa-calendar-check text-teal fs-4"></i>
@@ -680,7 +721,7 @@
             <p class="text-muted small mb-0">Allow active botanicals and hyaluronan to progressively restore fluid viscosity.</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6">
+        <div class="col-md-4 col-sm-6 col-12">
           <div class="clean-card p-3 text-center h-100">
             <div class="rounded-circle bg-light d-inline-flex align-items-center justify-content-center mx-auto mb-2" style="width: 52px; height: 52px;">
               <i class="fa-solid fa-shield-halved text-teal fs-4"></i>
@@ -1003,7 +1044,7 @@
       <h2 class="text-center">Select Your Protocol — Best Value Clearly Marked</h2>
       <div class="row g-4 mt-2 justify-content-center align-items-center">
         <!-- 1 Bottle -->
-        <div class="col-md-4 col-sm-10">
+        <div class="col-md-4 col-sm-10 col-12">
           <div class="package-card">
             <div>
               <h3 class="h5 mb-1">1 Bottle</h3>
@@ -1017,7 +1058,7 @@
           </div>
         </div>
         <!-- 6 Bottles (BEST VALUE - Center) -->
-        <div class="col-md-4 col-sm-10">
+        <div class="col-md-4 col-sm-10 col-12">
           <div class="package-card best-value">
             <span class="best-value-badge">BEST VALUE &bull; 6-MONTH PROTOCOL</span>
             <div>
@@ -1032,7 +1073,7 @@
           </div>
         </div>
         <!-- 3 Bottles -->
-        <div class="col-md-4 col-sm-10">
+        <div class="col-md-4 col-sm-10 col-12">
           <div class="package-card">
             <div>
               <h3 class="h5 mb-1">3 Bottles</h3>
@@ -1106,7 +1147,7 @@
           <h2>Final Verdict — Is Joint Genesis™ Right for You?</h2>
           <p>Joint Genesis™ provides an evidence-based approach to joint care by addressing the physiological root cause of age-related stiffness: the loss of synovial fluid lubrication. Powered by patented Mobilee® and standardized botanicals, it offers a well-formulated, transparent alternative to generic glucosamine pills.</p>
           <p class="mb-4">With the protection of a 180-day unconditional guarantee, it offers a scientifically grounded, risk-free opportunity to support your mobility and long-term joint comfort.</p>
-          <a href="https://2be72gpejwdydoc9shpfm7-tbs.hop.clickbank.net" target="_self" class="btn btn-accent btn-lg btn-responsive-block"><i class="fa-solid fa-cart-shopping me-2"></i> Check Current Pricing & Guarantee on Official Website</a>
+          <a href="https://2be72gpejwdydoc9shpfm7-tbs.hop.clickbank.net" target="_self" class="btn btn-accent btn-lg btn-responsive-block"><i class="fa-solid fa-cart-shopping me-2"></i> Check Current Pricing on Official Website</a>
         </div>
       </div>
     </div>
